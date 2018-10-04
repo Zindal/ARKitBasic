@@ -10,11 +10,11 @@
 		18D422B52158EADA0073A54F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D422B42158EAD90073A54F /* AppDelegate.swift */; };
 		18D422B72158EADA0073A54F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D422B62158EADA0073A54F /* ViewController.swift */; };
 		18D422BA2158EADA0073A54F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18D422B82158EADA0073A54F /* Main.storyboard */; };
-		18D422BD2158EADA0073A54F /* ArKitApps.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 18D422BB2158EADA0073A54F /* ArKitApps.xcdatamodeld */; };
 		18D422BF2158EAF20073A54F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18D422BE2158EAF20073A54F /* Assets.xcassets */; };
 		18D422C22158EAF20073A54F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18D422C02158EAF20073A54F /* LaunchScreen.storyboard */; };
 		18D422CD2158EAF30073A54F /* ArKitAppsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D422CC2158EAF30073A54F /* ArKitAppsTests.swift */; };
 		18D422D82158EAF30073A54F /* ArKitAppsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D422D72158EAF30073A54F /* ArKitAppsUITests.swift */; };
+		18D422E72158EB9E0073A54F /* ARKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18D422E62158EB9E0073A54F /* ARKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +39,6 @@
 		18D422B42158EAD90073A54F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18D422B62158EADA0073A54F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		18D422B92158EADA0073A54F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		18D422BC2158EADA0073A54F /* ArKitApps.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ArKitApps.xcdatamodel; sourceTree = "<group>"; };
 		18D422BE2158EAF20073A54F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18D422C12158EAF20073A54F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18D422C32158EAF20073A54F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +48,7 @@
 		18D422D32158EAF30073A54F /* ArKitAppsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArKitAppsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18D422D72158EAF30073A54F /* ArKitAppsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArKitAppsUITests.swift; sourceTree = "<group>"; };
 		18D422D92158EAF30073A54F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18D422E62158EB9E0073A54F /* ARKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ARKit.framework; path = System/Library/Frameworks/ARKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18D422E72158EB9E0073A54F /* ARKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +84,7 @@
 				18D422CB2158EAF30073A54F /* ArKitAppsTests */,
 				18D422D62158EAF30073A54F /* ArKitAppsUITests */,
 				18D422B22158EAD90073A54F /* Products */,
+				18D422E52158EB9E0073A54F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,7 +107,6 @@
 				18D422BE2158EAF20073A54F /* Assets.xcassets */,
 				18D422C02158EAF20073A54F /* LaunchScreen.storyboard */,
 				18D422C32158EAF20073A54F /* Info.plist */,
-				18D422BB2158EADA0073A54F /* ArKitApps.xcdatamodeld */,
 			);
 			path = ArKitApps;
 			sourceTree = "<group>";
@@ -126,6 +127,14 @@
 				18D422D92158EAF30073A54F /* Info.plist */,
 			);
 			path = ArKitAppsUITests;
+			sourceTree = "<group>";
+		};
+		18D422E52158EB9E0073A54F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				18D422E62158EB9E0073A54F /* ARKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +268,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18D422BD2158EADA0073A54F /* ArKitApps.xcdatamodeld in Sources */,
 				18D422B72158EADA0073A54F /* ViewController.swift in Sources */,
 				18D422B52158EADA0073A54F /* AppDelegate.swift in Sources */,
 			);
@@ -434,14 +442,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F986CH4K95;
 				INFOPLIST_FILE = ArKitApps/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ToDo.forastar.ArKitApps;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zindal.ArKitApps;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -451,14 +462,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F986CH4K95;
 				INFOPLIST_FILE = ArKitApps/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ToDo.forastar.ArKitApps;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zindal.ArKitApps;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -582,19 +596,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		18D422BB2158EADA0073A54F /* ArKitApps.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				18D422BC2158EADA0073A54F /* ArKitApps.xcdatamodel */,
-			);
-			currentVersion = 18D422BC2158EADA0073A54F /* ArKitApps.xcdatamodel */;
-			path = ArKitApps.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 18D422A92158EAD80073A54F /* Project object */;
 }
